@@ -8,7 +8,7 @@ import com.jerry.domain.entity.User;
 /**
  * 用户表(User)表服务接口
  *
- * @author yuchenli
+ * @author yuchenli 1
  * @since 2022-04-13 21:05:58
  */
 public interface UserService extends IService<User> {
