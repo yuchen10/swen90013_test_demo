@@ -1,10 +1,8 @@
 server:
   port : 8787
 spring:
-  redis:
-    port: 6379
-    host: localhost
-
+  profiles:
+    active: heroku
   datasource:
     url: jdbc:mysql://localhost:3306/sg_blog?characterEncoding=utf-8&serverTimezone=Asia/Shanghai
     username: root
