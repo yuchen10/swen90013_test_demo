@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    url: jdbc:postgres://couwihietdepnh:35f5a1dec71e68ad46aa70829a7cf91e3bc4c777042dde94aa6a1ced25c34c3d@ec2-3-209-124-113.compute-1.amazonaws.com:5432/d8kn5ol79226il?sslmode=require&user=couwihietdepnh&password=d8kn5ol79226il
+    username: couwihietdepnh
+    password: d8kn5ol79226il
+    driver-class-name: org.postgresql.Driver
+  servlet:
+    multipart:
+      max-file-size: 2MB
+      max-request-size: 5MB
+  main:
+    allow-circular-references: true
+mybatis-plus:
+  configuration:
+    # log
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-delete-field: delFlag
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+      id-type: auto
+oss:
+  accessKey: lfD9k7yoU4yc_B5nUu9tj1p-8QHycP-My5AvN3YR
+  secretKey: 4d_GKBxX7PxcPpn0f7WcUZGowV_L-9jVPaey6QNm
+  bucket: swen90013
